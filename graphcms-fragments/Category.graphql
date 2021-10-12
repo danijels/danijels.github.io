@@ -1,0 +1,17 @@
+fragment Category on Category {
+  stage
+  remoteId: id
+  createdAt
+  updatedAt
+  publishedAt
+  title
+  description
+  projects {
+    ... on Project {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  buttonTitle
+}

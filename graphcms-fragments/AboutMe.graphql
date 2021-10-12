@@ -1,0 +1,15 @@
+fragment AboutMe on AboutMe {
+  stage
+  remoteId: id
+  createdAt
+  updatedAt
+  publishedAt
+  content {
+    ... on RichText {
+      raw
+      html
+      markdown
+      text
+    }
+  }
+}

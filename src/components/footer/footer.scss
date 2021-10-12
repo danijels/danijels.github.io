@@ -1,0 +1,18 @@
+footer {
+	border-top: 0.1rem solid;
+	font-size: 0.8rem;
+	opacity: 0.9;
+	padding: 0.5rem 1rem;
+	#fields {	
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 1rem;
+		.contact-field {
+			border: 0.1rem dashed;
+			font-weight: bold;
+			margin-bottom: 0.3rem;
+			margin-right: 1rem;
+			padding: 0.5rem;			
+		}
+	}
+}

@@ -1,0 +1,31 @@
+#portfolio {  
+  border-top: 0.1rem solid;
+  padding: 3rem 2rem;
+  #portf-title {
+    text-align: center;
+  }
+  #portf-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    #categories {
+      list-style-type: none;
+      margin: 0 auto;
+      padding: 0 1rem;
+      button {
+        background-color: inherit;
+        //border: 0.2rem solid;      
+        box-shadow: 0 0 0.3rem;
+        margin-bottom: 0.5rem;
+        outline: none;
+        padding: 0.5rem;
+        user-select: none;
+        width: 10rem;
+        &:active {
+          box-shadow: none;
+        }
+      }
+    }
+  } //#portf-content
+} //#portfolio
