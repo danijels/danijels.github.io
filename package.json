@@ -8,8 +8,8 @@
     "gatsby"
   ],
   "scripts": {
-    "deploy": "gatsby build && gh-pages -d public -b main",
-    "justdeploy": "gh-pages -d public -b main",
+    "deploy": "gatsby build && gh-pages -d public -b master",
+    "justdeploy": "gh-pages -d public -b master",
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
