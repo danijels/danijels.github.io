@@ -14,6 +14,7 @@ import Footer from "../components/footer"
 import avatar from "../images/avatar.jpg"
 
 const { useState } = React;
+const host = typeof window !== 'undefined' && `${window.location.protocol}//${window.location.host}`;
 
 const IndexPage = ({ data: { about, categories } }) => {
     const allCategories = categories.nodes;
@@ -33,7 +34,7 @@ const IndexPage = ({ data: { about, categories } }) => {
 
     const pins = category.projects.map(({ title, shortDescription, pinPhoto, stack, queryParam, url }) => {
         const links = [
-            ["See More", `/project?name=${queryParam}`],
+            ["See More", `${host}/project?name=${queryParam}`],
             ["See Live", url],
             ["See Code", `https://github.com/danijels/${queryParam}`]
         ];
@@ -53,7 +54,7 @@ const IndexPage = ({ data: { about, categories } }) => {
               nav={fillers.navLinks}
             />
             <Card
-              text="WEB DEVELOPER"
+              text=""
               title="Danijela Sain"
               img={avatar}
               alt="a portrait of me sitting on a ruined wall with a river in hills in the background"
